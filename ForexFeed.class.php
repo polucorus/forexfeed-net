@@ -106,6 +106,8 @@
  * // END USAGE
  *
  */
+namespace ForexFeed;
+
 class ForexFeed {
   
   private $version = '2.3';
