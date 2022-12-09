@@ -106,7 +106,7 @@
  * // END USAGE
  *
  */
-namespace ForexFeed;
+namespace ForexFeedNet;
 
 class ForexFeed {
   
