@@ -312,7 +312,7 @@ public function getNoStats(){
  */
 private function doRequest($query_string) {
   
-  $result = new stdClass();
+  $result = new \stdClass();
   
   $host = $this->getHostname();
   $port = $this->getPort();
