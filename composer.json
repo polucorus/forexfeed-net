@@ -1,0 +1,10 @@
+{
+    "name": "polucorus/forexfeed-net",
+    "description": "ForexFeed.net API library",
+    "type": "yii-extension",
+    "autoload": {
+        "psr-4": {
+            "forexfeed\\": ""
+        }
+    }
+}
