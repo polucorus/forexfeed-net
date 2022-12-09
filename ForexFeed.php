@@ -801,7 +801,7 @@ public function getData() {
        $q['high']      = $quote[4];
        $q['low']       = $quote[5];
        $q['close']     = $quote[6];
-       $q{'volume'}    = (count($quote) >= 8) ? $quote[7] : 0;
+       $q['volume']    = (count($quote) >= 8) ? $quote[7] : 0;
        }
       ;
       
