@@ -135,6 +135,8 @@ class ForexFeed {
   
   private $all_symbols = array();
   private $all_intervals = array();
+
+  private $response = array();
   
   /*  Constructor function  */
   public function __construct($flags) {
@@ -404,7 +406,12 @@ private function doRequest($query_string) {
   $result->headers = array();
   
   // Parse headers.
-  while ($line = trim(array_shift($split))) {
+  while ($line = array_shift($split)) {
+    $line = trim($line);
+    if (!$line) {
+      continue;
+    }
+
     list($header, $value) = explode(':', $line, 2);
     if (isset($result->headers[$header]) && $header == 'Set-Cookie') {
      // RFC 2109: the Set-Cookie response header comprises the token Set-
